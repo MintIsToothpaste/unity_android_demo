@@ -1,0 +1,7 @@
+rootProject.name = "UnityAndroidDemo"
+
+include(":app")
+// unityLibrary 모듈은 Unity에서 내보낸 프로젝트를 연결할 때 사용합니다.
+// 아래 줄을 주석 처리하지 말고, Unity 라이브러리를 추가한 경로에 맞게 수정하세요.
+// include(":unityLibrary")
+// project(":unityLibrary").projectDir = new File("../UnityProject/androidBuild/unityLibrary")
