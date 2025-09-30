@@ -38,7 +38,12 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0"
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.7.0"
     implementation "com.google.android.material:material:1.11.0"
-    
+
+    implementation "androidx.activity:activity-ktx:1.11.0"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7"  // 최신 2.8.x 안정판 권장
+
+    implementation files('libs/unityLibrary-debug.aar')
+
     // Unity 라이브러리 모듈 추가
     // implementation project(":unityLibrary")
 }
