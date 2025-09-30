@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  비벳 Android 매니파스트.
+  애플리케이션 ID및 액티비티를 선택합니다.
+
+  Unity 라이브러리와 연동하기 위해서는 UnityPlayerActivity를 추가해야 합니다.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.unityintegration">
+
+    <application
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <!-- 메인 액티비티 -->
+        <activity
+            android:name=".presentation.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Unity 플레이어 액티비티: Unity 라이브러리에서 제공 -->
+        <activity
+            android:name="com.unity3d.player.UnityPlayerActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="false"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden|smallestScreenSize|uiMode" />
+    </application>
+
+</manifest>
